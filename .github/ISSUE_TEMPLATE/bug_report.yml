@@ -1,0 +1,89 @@
+name: Bug Report
+description: Melden Sie einen Bug
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vielen Dank, dass Sie einen Bug melden! Bitte füllen Sie das folgende Formular aus.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Welche Version von NSBOM verwenden Sie?
+      placeholder: z.B. v1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project-type
+    attributes:
+      label: Projekttyp
+      description: Welchen Projekttyp haben Sie gescannt?
+      options:
+        - npm
+        - python
+        - beide
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Was ist passiert?
+      description: Beschreiben Sie den Bug detailliert
+      placeholder: Erzählen Sie uns, was schief gelaufen ist!
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was hätte passieren sollen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Schritte zur Reproduktion
+      description: Wie können wir den Bug reproduzieren?
+      placeholder: |
+        1. Führen Sie '...' aus
+        2. Klicken Sie auf '....'
+        3. Scrollen Sie nach unten zu '....'
+        4. Sehen Sie den Fehler
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Umgebung
+      description: Informationen über Ihre Umgebung
+      placeholder: |
+        - OS: [z.B. Windows 11, Ubuntu 20.04]
+        - Python Version: [z.B. 3.9.7]
+        - Node.js Version: [z.B. 16.14.0]
+        - NPM Version: [z.B. 8.3.1]
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevante Logs
+      description: Kopieren Sie relevante Log-Ausgaben hier hinein
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: Mit dem Absenden dieses Issues stimmen Sie unserem Code of Conduct zu
+      options:
+        - label: Ich stimme dem Code of Conduct zu
+          required: true

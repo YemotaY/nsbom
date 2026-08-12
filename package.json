@@ -1,0 +1,47 @@
+{
+  "name": "nsbom",
+  "version": "1.0.0",
+  "description": "Node.js & Python SBOM (Software Bill of Materials) Generator",
+  "main": "main.py",
+  "scripts": {
+    "test": "python -c \"from main import SBOM; SBOM('npm')\"",
+    "scan": "python main.py",
+    "security-scan": "powershell -ExecutionPolicy Bypass -File scan.ps1"
+  },
+  "keywords": [
+    "sbom",
+    "security",
+    "npm",
+    "python",
+    "dependencies",
+    "bill-of-materials",
+    "vulnerability",
+    "audit"
+  ],
+  "author": "SBO",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/nsbom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/nsbom/issues"
+  },
+  "homepage": "https://github.com/yourusername/nsbom#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "main.py",
+    "scan.ps1",
+    "exceptions/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}

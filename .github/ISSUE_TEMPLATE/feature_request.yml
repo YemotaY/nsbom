@@ -1,0 +1,71 @@
+name: Feature Request
+description: Schlagen Sie ein neues Feature vor
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vielen Dank für Ihren Feature-Vorschlag! Bitte beschreiben Sie Ihre Idee detailliert.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem/Use Case
+      description: Welches Problem würde dieses Feature lösen?
+      placeholder: Beschreiben Sie das Problem oder den Use Case...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Vorgeschlagene Lösung
+      description: Wie stellen Sie sich die Lösung vor?
+      placeholder: Beschreiben Sie Ihre Idee für das Feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Ansätze
+      description: Haben Sie andere Lösungsansätze in Betracht gezogen?
+      placeholder: Beschreiben Sie alternative Lösungen...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorität
+      description: Wie wichtig ist dieses Feature für Sie?
+      options:
+        - Nice to have
+        - Important
+        - Critical
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: Implementation
+      description: Sind Sie bereit, bei der Implementierung zu helfen?
+      options:
+        - label: Ich würde gerne bei der Implementierung helfen
+        - label: Ich kann bei der Dokumentation helfen
+        - label: Ich kann beim Testen helfen
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Zusätzliche Informationen
+      description: Weitere Details, Screenshots, Links, etc.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: Mit dem Absenden dieses Issues stimmen Sie unserem Code of Conduct zu
+      options:
+        - label: Ich stimme dem Code of Conduct zu
+          required: true

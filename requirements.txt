@@ -1,0 +1,13 @@
+# No external dependencies required for core functionality
+# All required modules are part of Python standard library:
+# - json
+# - pathlib
+# - platform
+# - subprocess
+# - sys
+# - time
+
+# Optional dependencies for development:
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.8.0

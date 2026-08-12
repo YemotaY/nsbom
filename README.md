@@ -25,7 +25,7 @@ Ein Tool zur automatischen Generierung von Software Bill of Materials (SBOM) fü
 ### Python Dependencies
 - Keine externen Dependencies erforderlich (nutzt nur Standard-Bibliothek)
 
-## 🛠Installation
+## Installation
 
 1. Repository klonen:
 ```bash
@@ -79,7 +79,7 @@ Führe den PowerShell-Scanner aus, um kompromittierte Pakete zu finden:
 .\scan.ps1
 ```
 
-## 🏗Projektstruktur
+## Projektstruktur
 
 ```
 nsbom/
